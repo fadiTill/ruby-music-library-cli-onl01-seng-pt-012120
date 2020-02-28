@@ -12,7 +12,7 @@ class MusicLibraryController
 
   def call
 
-    input = gets.strip *4
+    input = gets.strip 
     if  input != "exit"
 
       puts "Welcome to your music library!"
