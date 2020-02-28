@@ -26,6 +26,7 @@ class MusicLibraryController
 
       input = gets.strip
       while  input != "exit" do
+        
 
 
  case input
@@ -42,6 +43,8 @@ list_songs_by_genre
 when "play song"
 play_song
 end
+gets.strip
+
 end
 end
 def list_songs
