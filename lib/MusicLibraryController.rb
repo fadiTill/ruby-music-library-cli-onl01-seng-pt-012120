@@ -87,12 +87,11 @@ def list_songs_by_genre
 end
 
 def play_song
-puts "Which song number would you like to play?"
-input = gets.strip.to_i
-if input > 0 && input <= Song.all.length
-array = Song.all.sort{|a, b| a.name <=> b.name}
-song = array[input-1]
-puts "Playing #{song.name} by #{song.artist.name}"
-end
-end
+ puts "Which song number would you like to play?"
+ input = gets.strip.to_i
+ if input > 0 && input <= Song.all.length
+ array = Song.all.sort{|a, b| a.name <=> b.name}
+ song = array[input-1]
+  end
+ end
 end
